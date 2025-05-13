@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 100vh;
+}
+
+.contactos {
+  width: 25%;
+  background-color: white;
+  border-right: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Alinea hijos al ancho completo */
+  padding: 0; /* Mejor dejar padding en los hijos */
+  overflow-y: auto;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 2px solid #ddd;
+}
+
+.activo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.imagen {
+  width: 60px;
+  height: 60px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;     /* ¡Hace la imagen redonda! */
+  object-fit: cover;      /* Cubre sin deformarse */
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nombre {
+  font-size: 30px;
+  color: #333;
+}
+
+.estado {
+  font-size: 20px;
+  color: gray;
+}
+
+.info .nombre {
+  font-size: 30px;
+  color: #333;
+}
+
+.info .estado {
+  font-size: 20px;
+  color: #BEC1BB;
+}
+
+.iconos {
+  display: flex;
+  gap: 15px;
+  color: #BEC1BB;
+  font-size: 30px;
+}
+
+.nuevo-chat {
+  padding: 80px;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+
+.nuevo-chat button {
+  background-color: #A491D2;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 26px;
+}
+
+.info-contactos {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+}
+
+.info-contactos .nombre {
+  font-size: 30px;
+  color: #333;
+}
+
+.info-contactos .estado {
+  font-size: 26px;
+  color: gray;
+}
+
+.inactivo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.inactivo .imagen {
+  width: 90px;
+  height: 90px;
+}
+
+main {
+  flex: 1; /* Ocupa todo el espacio restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main img {
+  width: 500px;
+  height: 500px;
+}
+
+.parrafo-main {
+  font-size: 70px;
+  margin: 30px;
+  font-weight: 700;
+}
+
+main p {
+  font-size: 30px;
+}
